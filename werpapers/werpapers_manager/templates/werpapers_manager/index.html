@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
+{% load static %}
 <head>
    <title>WERpapers - Artigos Publicados no Workshop em Engenharia de
      Requisitos</title>
 </head>
-<body bgproperties="fixed" background="/imagens//eng_req.jpg">
+<body bgproperties="fixed" background="{% static 'werpapers_manager/eng_req.jpg' %}">
 <br>
    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
      collapse" bordercolor="#111111" width="100%" id="AutoNumber1">
       <tr>
       <td>
-         <p align="center"><img border="0" src="/imagens//logo_wer_papers.jpg" width="169"height="102"></p>
+         <p align="center"><img border="0" src="{% static 'werpapers_manager/logo_wer_papers.jpg' %}" width="169"height="102"></p>
          <p align="center">
             <font face="Times New Roman" size="5" color="#0000FF">Artigos
               publicados no WER</font>
@@ -104,14 +105,14 @@
     <tr>
       <td width="34%" align=right>
         <a target="_blank" href="../index.html">
-	  <img border="0" src="/imagens//logo_wer_new.jpg"
+	  <img border="0" src="{% static 'werpapers_manager/logo_wer_new.jpg' %}"
                width="150" height="56">
 	</a>
       </td>
 
       <td width="17%" align=center><!-- Start DBLP -->
         <a target="_blank" href="http://www.informatik.uni-trier.de/%7Eley/db/conf/wer/index.html">
-	  <img src="/imagens//dblp.gif"
+	  <img src="{% static 'werpapers_manager/dblp.gif' %}"
                width="109" border="0" height="40">
         </a>
       </td>
